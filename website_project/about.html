@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Most energy problems don’t come from bad technology. They come from bad decisions. OnLoop Energy is built to help you make the right choice.">
+    <title>Why OnLoop Energy | Built on Reality</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/visuals.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.svg" alt="OnLoop Energy" style="height: 48px; width: auto;">
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__dropdown">
+                        <span class="nav__dropdown-toggle">
+                            Solutions
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </span>
+                        <div class="nav__dropdown-menu">
+                            <a href="solar.html" class="nav__dropdown-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" width="16" height="16">
+                                    <circle cx="12" cy="12" r="5" />
+                                    <line x1="12" y1="1" x2="12" y2="3" />
+                                    <line x1="12" y1="21" x2="12" y2="23" />
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                    <line x1="1" y1="12" x2="3" y2="12" />
+                                    <line x1="21" y1="12" x2="23" y2="12" />
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                                </svg>
+                                Solar Energy
+                            </a>
+                            <a href="wind.html" class="nav__dropdown-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" width="16" height="16">
+                                    <path
+                                        d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
+                                </svg>
+                                Wind Energy
+                            </a>
+                            <a href="hybrid.html" class="nav__dropdown-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" width="16" height="16">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                    <path d="M2 17l10 5 10-5" />
+                                    <path d="M2 12l10 5 10-5" />
+                                </svg>
+                                Hybrid Solutions
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav__dropdown">
+                        <span class="nav__dropdown-toggle">
+                            Services
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </span>
+                        <div class="nav__dropdown-menu">
+                            <a href="epc-services.html" class="nav__dropdown-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" width="16" height="16">
+                                    <path
+                                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                                </svg>
+                                EPC Services
+                            </a>
+                            <a href="om-services.html" class="nav__dropdown-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" width="16" height="16">
+                                    <circle cx="12" cy="12" r="3" />
+                                    <path
+                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                                </svg>
+                                O&M Services
+                            </a>
+                            <a href="consulting.html" class="nav__dropdown-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" width="16" height="16">
+                                    <line x1="18" y1="20" x2="18" y2="10" />
+                                    <line x1="12" y1="20" x2="12" y2="4" />
+                                    <line x1="6" y1="20" x2="6" y2="14" />
+                                </svg>
+                                Consulting
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="nav__link nav__link--active">About</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn--primary">Contact Us</a>
+            </nav>
+            <button class="mobile-toggle"
+                aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile">
+        <div class="nav__mobile-content">
+            <a href="index.html" class="nav__mobile-item">Home</a>
+
+            <div class="nav__mobile-group">
+                <div class="nav__mobile-group-title">Solutions</div>
+                <a href="solar.html" class="nav__mobile-sublink">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </svg>
+                    Solar Energy
+                </a>
+                <a href="wind.html" class="nav__mobile-sublink">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
+                    </svg>
+                    Wind Energy
+                </a>
+                <a href="hybrid.html" class="nav__mobile-sublink">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                        <path d="M2 17l10 5 10-5" />
+                        <path d="M2 12l10 5 10-5" />
+                    </svg>
+                    Hybrid Solutions
+                </a>
+            </div>
+
+            <div class="nav__mobile-group">
+                <div class="nav__mobile-group-title">Services</div>
+                <a href="epc-services.html" class="nav__mobile-sublink">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                    </svg>
+                    EPC Services
+                </a>
+                <a href="om-services.html" class="nav__mobile-sublink">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3" />
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                    </svg>
+                    O&M Services
+                </a>
+                <a href="consulting.html" class="nav__mobile-sublink">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10" />
+                        <line x1="12" y1="20" x2="12" y2="4" />
+                        <line x1="6" y1="20" x2="6" y2="14" />
+                    </svg>
+                    Consulting
+                </a>
+            </div>
+
+            <a href="about.html" class="nav__mobile-item">About</a>
+            <a href="contact.html" class="btn btn--primary">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero--short hero--image" style="background-image: url('images/stock/solar-park-1288842.jpg');">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    WHY ONLOOP ENERGY<br>
+                    <span class="hero__title-highlight">We start with reality.</span>
+                </h1>
+                <p class="hero__subtitle">Most energy problems don’t come from bad technology. They come from bad
+                    decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction: The Problem -->
+    <section class="content-section content-section--white fade-in">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h2 class="content-section__title" style="margin-bottom: var(--space-6);">More options don’t
+                        automatically lead to better outcomes.</h2>
+                    <p class="content-section__text">
+                        Clean energy today is full of options—solar, wind, hybrid, storage. But at OnLoop Energy, our
+                        role is simple but serious: help you make the right energy decision for your site, not the most
+                        popular one.
+                    </p>
+                    <div
+                        style="margin-top: var(--space-8); padding: var(--space-6); border-left: 4px solid var(--color-primary); background: rgba(30,115,184,0.05);">
+                        <p
+                            style="font-size: var(--font-size-xl); font-weight: 500; color: var(--color-primary-dark); margin-bottom: 0;">
+                            "We don’t start with technology. We start with reality."
+                        </p>
+                    </div>
+                </div>
+                <div
+                    style="display: flex; flex-direction: column; justify-content: center; padding-left: var(--space-8);">
+                    <p class="content-section__text">
+                        Every site behaves differently. Sun hours vary. Wind patterns shift. Loads fluctuate. Land,
+                        grid, and budgets impose limits.
+                    </p>
+                    <p class="content-section__text">
+                        So before we talk about panels or turbines, we ask better questions:
+                    </p>
+                    <ul class="feature-list" style="margin-top: var(--space-4);">
+                        <li class="feature-item"
+                            style="border: none; background: transparent; padding: var(--space-2) 0; box-shadow: none;">
+                            <div class="feature-item__icon" style="flex-shrink: 0;"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <span class="feature-item__text" style="font-size: var(--font-size-base);">What does your
+                                site actually offer?</span>
+                        </li>
+                        <li class="feature-item"
+                            style="border: none; background: transparent; padding: var(--space-2) 0; box-shadow: none;">
+                            <div class="feature-item__icon" style="flex-shrink: 0;"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <span class="feature-item__text" style="font-size: var(--font-size-base);">When do you
+                                really need energy?</span>
+                        </li>
+                        <li class="feature-item"
+                            style="border: none; background: transparent; padding: var(--space-2) 0; box-shadow: none;">
+                            <div class="feature-item__icon" style="flex-shrink: 0;"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <span class="feature-item__text" style="font-size: var(--font-size-base);">What will still
+                                work 10–15 years from now?</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Only after that... -->
+    <section class="content-section content-section--light fade-in">
+        <div class="container" style="text-align: center;">
+            <p class="content-section__label">Our Philosophy</p>
+            <h2 class="content-section__title" style="margin-bottom: var(--space-12);">Only after that do we design a
+                solution.</h2>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </div>
+                    <h4 class="card__title">Solar.</h4>
+                    <p class="card__text">Simple, effective, and reliable. Sometimes solar is the right answer on its
+                        own.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="card__title">Wind.</h4>
+                    <p class="card__text">Site-specific value. We deploy wind where resources genuinely support
+                        long-term performance.</p>
+                </div>
+
+                <div class="card card--conclusion">
+                    <div class="card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="card__title">Hybrid Energy</h4>
+                        <p class="card__text">The conclusion of engineering. We integrate solar and wind only when they
+                            complement each other to create a more stable, resilient, and higher-performing energy
+                            asset.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: var(--space-12);">
+                <h3
+                    style="font-size: var(--font-size-2xl); color: var(--color-primary-dark); margin-bottom: var(--space-4);">
+                    All tools. No bias.</h3>
+                <p class="content-section__text" style="max-width: 800px; margin: 0 auto;">
+                    We design and deliver solar, small wind, and hybrid systems. That matters—not because it sounds
+                    impressive, but because it keeps our thinking honest. When you are not tied to a single technology,
+                    you are free to recommend what fits.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hybrid Engineering Conclusion -->
+    <section class="content-section fade-in">
+        <div class="container">
+            <div class="grid-2">
+                <div
+                    style="background: var(--color-primary-dark); padding: var(--space-10); border-radius: var(--radius-xl); color: white;">
+                    <h2 style="font-size: var(--font-size-3xl); margin-bottom: var(--space-6);">Hybrid is not a feature
+                        for us. It’s a conclusion.</h2>
+                    <p style="font-size: var(--font-size-lg); opacity: 0.9; margin-bottom: var(--space-6);">
+                        Solar and wind behave differently across time and seasons. When designed together—properly—they
+                        can complement each other. When designed carelessly, they add cost without benefit.
+                    </p>
+                    <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: var(--space-6);">
+                        <p style="font-weight: 600; font-size: var(--font-size-xl);">If hybrid improves performance,
+                            we’ll recommend it. If it doesn’t, we won’t. Simple.</p>
+                    </div>
+                </div>
+                <div
+                    style="padding-left: var(--space-8); display: flex; flex-direction: column; justify-content: center;">
+                    <h3 class="content-section__title"
+                        style="font-size: var(--font-size-2xl); margin-bottom: var(--space-6);">We care more about
+                        outcomes than installations.</h3>
+                    <p class="content-section__text">
+                        We measure success differently. Not by how many systems we install. Not by how fast a deal
+                        closes. But by whether the system still performs the way it was intended—years after
+                        commissioning.
+                    </p>
+                    <p class="content-section__text">
+                        That mindset influences everything:
+                    </p>
+                    <ul class="feature-list" style="margin-top: var(--space-4);">
+                        <li class="feature-item">
+                            <div class="feature-item__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <span class="feature-item__text">Conservative design assumptions</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-item__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <span class="feature-item__text">Honest feasibility discussions</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-item__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <span class="feature-item__text">Clear communication of limitations</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-item__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <span class="feature-item__text">Long-term accountability</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who This Works Best For -->
+    <section class="content-section content-section--light fade-in">
+        <div class="container container--narrow">
+            <div style="text-align: center; margin-bottom: var(--space-12);">
+                <span class="content-section__label">Our Ideal Partners</span>
+                <h2 class="content-section__title">Who this works best for</h2>
+                <p class="content-section__text">OnLoop Energy is built for customers who want clarity, not confusion.
+                    Who prefer thoughtful advice over quick selling. And who are making decisions that actually matter.
+                </p>
+            </div>
+
+            <div class="card" style="padding: var(--space-10); margin-bottom: var(--space-12);">
+                <h3 style="margin-bottom: var(--space-6); color: var(--color-primary);">One principle guides every
+                    decision we make</h3>
+                <p class="content-section__text"
+                    style="font-size: var(--font-size-xl); font-weight: 500; color: var(--color-text-primary);">
+                    If a solution does not genuinely serve the customer’s long-term interest, we don’t push it. Even if
+                    it costs us a sale.
+                </p>
+                <p class="content-section__text"
+                    style="margin-top: var(--space-4); font-size: var(--font-size-base); color: var(--color-text-secondary);">
+                    That’s not a marketing line. That’s how this company was designed to operate.
+                </p>
+            </div>
+
+            <div style="text-align: center;">
+                <h2 class="content-section__title" style="margin-bottom: var(--space-6);">In short</h2>
+                <p class="content-section__text" style="font-size: var(--font-size-xl);">
+                    OnLoop Energy exists to bring calm, engineering-led thinking into renewable energy.
+                </p>
+                <div
+                    style="margin-top: var(--space-8); font-size: var(--font-size-2xl); font-weight: 700; color: var(--color-primary-dark); line-height: 1.4;">
+                    No noise.<br>
+                    No pressure.<br>
+                    No shortcuts.<br>
+                    <span
+                        style="color: var(--color-accent); display: block; margin-top: var(--space-4); font-size: var(--font-size-3xl);">Just
+                        clean energy—done right.</span>
+                </div>
+                <div style="margin-top: var(--space-12);">
+                    <a href="contact.html" class="btn btn--primary btn--large">Start a Conversation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Background Visuals -->
+        <div class="landscape-bg">
+            <div class="hill"></div>
+            <div class="hill"></div>
+            <div class="ground-shadow"></div>
+        </div>
+
+        <div class="turbine-visual">
+            <div class="turbine-pole"></div>
+            <div class="turbine-rotor">
+                <div class="turbine-hub"></div>
+                <div class="turbine-blade"></div>
+                <div class="turbine-blade"></div>
+                <div class="turbine-blade"></div>
+            </div>
+        </div>
+
+        <div class="turbine-visual turbine-visual--small-1">
+            <div class="turbine-pole"></div>
+            <div class="turbine-rotor">
+                <div class="turbine-hub"></div>
+                <div class="turbine-blade"></div>
+                <div class="turbine-blade"></div>
+                <div class="turbine-blade"></div>
+            </div>
+        </div>
+
+        <div class="turbine-visual turbine-visual--small-2">
+            <div class="turbine-pole"></div>
+            <div class="turbine-rotor">
+                <div class="turbine-hub"></div>
+                <div class="turbine-blade"></div>
+                <div class="turbine-blade"></div>
+                <div class="turbine-blade"></div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="images/logo.svg" alt="OnLoop Energy" style="height: 36px; width: auto;">
+                    </div>
+                    <p class="footer__description">
+                        Developing solar, wind, and hybrid power projects for diverse infrastructure and industrial
+                        needs.
+                        Gujarat, India.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer__title">Solutions</h4>
+                    <ul class="footer__list">
+                        <li><a href="solar.html" class="footer__link">Solar</a></li>
+                        <li><a href="wind.html" class="footer__link">Wind</a></li>
+                        <li><a href="hybrid.html" class="footer__link">Hybrid</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__list">
+                        <li><a href="epc-services.html" class="footer__link">EPC Services</a></li>
+                        <li><a href="om-services.html" class="footer__link">O&M Services</a></li>
+                        <li><a href="consulting.html" class="footer__link">Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__title">Company</h4>
+                    <ul class="footer__list">
+                        <li><a href="about.html" class="footer__link">About Us</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 OnLoop Energy. All rights reserved.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+/* =========================================
+   OnLoop Energy - Visual Animations
+   ========================================= */
+
+/* ---- Wind Turbine Animation ---- */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.turbine-visual {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 400px;
+    z-index: 5;
+    pointer-events: none;
+    overflow: visible;
+}
+
+/* ... (Rest of turbine structure remains similar, maybe adjusted) ... */
+.turbine-pole {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 280px;
+    background: linear-gradient(90deg, #cbd5e1 0%, #94a3b8 50%, #64748b 100%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.turbine-rotor {
+    position: absolute;
+    bottom: 270px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    animation: spin 3s infinite linear;
+    z-index: 2;
+}
+
+.turbine-blade {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 18px;
+    height: 130px;
+    background: linear-gradient(to top,
+            #ffffff 0%,
+            #f1f5f9 80%,
+            #43B047 80%, #43B047 85%,
+            #f1f5f9 85%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 40% 60% 100% 5%;
+    transform-origin: 50% 100%;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-left: -9px;
+}
+
+/* 3 Blades exactly 120 degrees apart */
+.turbine-blade:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.turbine-blade:nth-child(2) {
+    transform: rotate(120deg);
+}
+
+.turbine-blade:nth-child(3) {
+    transform: rotate(240deg);
+}
+
+/* Center Hub cap */
+.turbine-hub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    background: radial-gradient(circle at 30% 30%, #94a3b8, #475569);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Secondary Turbines */
+.turbine-visual--small-1 {
+    transform: translateX(-50%) scale(0.7);
+    left: 20%;
+    bottom: 42px;
+    opacity: 1;
+    z-index: 4;
+}
+
+.turbine-visual--small-1 .turbine-rotor {
+    animation-duration: 4.5s;
+}
+
+.turbine-visual--small-2 {
+    transform: translateX(-50%) scale(0.7);
+    left: 80%;
+    bottom: 41px;
+    opacity: 1;
+    z-index: 3;
+}
+
+.turbine-visual--small-2 .turbine-rotor {
+    animation-duration: 3.8s;
+}
+
+/* ---- Landscape/Terrain ---- */
+.landscape-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(to top, rgba(143, 188, 143, 0.1), transparent);
+}
+
+.hill {
+    position: absolute;
+    bottom: -40%;
+    width: 140%;
+    height: 100%;
+    border-radius: 100% 100% 0 0;
+    opacity: 0.8;
+}
+
+.landscape-bg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #8fbc8f;
+    /* Solid lawn base */
+    background-image:
+        linear-gradient(90deg, transparent 95%, rgba(0, 0, 0, 0.05) 100%),
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 100%, 100% 4px;
+    z-index: 2;
+}
+
+.hill:nth-child(1) {
+    left: -10%;
+    bottom: -70%;
+    width: 120%;
+    height: 120%;
+    background:
+        repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.02) 0px, rgba(0, 0, 0, 0.02) 40px, transparent 40px, transparent 80px),
+        linear-gradient(180deg, #8fbc8f 0%, #556b2f 100%);
+    /* Lush lawn with mowed lines */
+    z-index: 1;
+    opacity: 1;
+    border-top: 4px solid #4e6332;
+}
+
+.hill:nth-child(2) {
+    right: -20%;
+    bottom: -60%;
+    width: 140%;
+    background: linear-gradient(180deg, #c7d2de 0%, #aabdd1 100%);
+    z-index: 0;
+}
+
+/* Ground shadow for structures */
+.ground-shadow {
+    position: absolute;
+    bottom: 35px;
+    /* Subtle shadow on the lawn */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 650px;
+    height: 50px;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, transparent 70%);
+    z-index: 2;
+    /* Just below the structures */
+    pointer-events: none;
+}
+
+
+
+/* ---- Footer Integration Override ---- */
+.footer {
+    position: relative;
+    overflow: hidden;
+    /* To clip the visuals */
+    z-index: 1;
+}
+
+.footer__grid {
+    position: relative;
+    z-index: 10;
+    /* Content above visuals */
+}
+
+/* Mobile adjustments */
+@media (max-width: 900px) {
+    .turbine-visual {
+        transform: scale(0.6);
+        right: -80px;
+        bottom: -40px;
+        opacity: 0.5;
+        /* Fade out on smaller screens to avoid distraction */
+    }
+
+
+
+    .turbine-visual--small-1,
+    .turbine-visual--small-2 {
+        display: none;
+    }
+
+    .landscape-bg {
+        height: 150px;
+    }
+}
